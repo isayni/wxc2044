@@ -1,0 +1,113 @@
+
+body{
+    background-image: url("img/back.jpg");
+    background-size: 100%;
+}
+p{
+    margin: 0;
+}
+header{
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+    background-image: url('img/banner.jpg');
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+} 
+main{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 860px;
+    background-color: azure;
+    padding: 70px;
+}
+.film{
+    margin: 20px 0px 0px 0px;
+    display: inline-flex;
+}
+.pres{
+    background-color: rgb(235, 232, 217);
+    border: 6px ridge brown;
+    width: 600px;
+    height: 200px;
+    position: relative;
+}
+.image{
+    height: 200px;
+    width: 220px;
+    margin-left: 20px;
+    border: 6px ridge brown;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.image img{
+    position: absolute;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    height: 100%;
+}
+.desc hr{
+    background-color: rgb(80, 80, 80);
+    width: 250px;
+    height: 2px;
+}
+.poster{
+    float: left;
+}
+.poster img{
+    height: 190px;
+    border: 5px double red;
+}
+.desc{
+    color: black;
+    margin-left: 160px;
+}
+.desc a{
+    color: Black;
+}
+.ratings{
+    margin-top: 4px;
+    padding: 5px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+}
+.ratings img{
+    height: 22px;
+}
+.rating{
+    float: left;
+    margin-left: 10px;
+    margin-right: 14px;
+    display: flex;
+    justify-content: center;
+}
+.rating p{
+    font-size: 13pt;
+    vertical-align: middle;
+    float: right;
+    margin-left: 10px;
+}
+
+.metar{
+    background-color: rgb(35, 230, 9);
+    color: white;
+    border: 1px solid gray;
+    padding: 2px;
+    font-size: 10pt !important;
+}
+.cred{
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
