@@ -1,40 +1,40 @@
 import json
-def template(title, year, poster, web, i, f, r, m, dir, cast, pic):
+def template(f):
     return f"""
     <div class="film">
         <div class="pres">
             <div class="poster">
-                <img src="{poster}" alt="poster">
+                <img src="{f['poster']}" alt="poster">
             </div>
             <div class="desc">
-                    <h3><a href="{web}">{title}</a> ({year})</h3>
+                    <h3><a href="{f['web']}">{f['title']}</a> ({f['year']})</h3>
                 <hr align="left">
                 <div class="ratings">
                     <div class="rating">
                         <img src="img/imdb.png">
-                        <p>{i}</p>
+                        <p>{f['i']}</p>
                     </div>
                     <div class="rating">
                         <img src="img/filmweb.png">
-                        <p>{f}</p>
+                        <p>{f['f']}</p>
                     </div>
                     <div class="rating">
                         <img src="img/rotten.png">
-                        <p>{r}%</p>
+                        <p>{f['r']}%</p>
                     </div>
                     <div class="rating">
                         <img src="img/meta.png">
-                        <p class="metar">{m}</p>
+                        <p class="metar">{f['m']}</p>
                     </div>
                 </div>
                 <div class="cred">
-                    <p>Reżyseria: {dir}</p>
-                    <p>Obsada: {cast}</p>
+                    <p>Reżyseria: {f['dir']}</p>
+                    <p>Obsada: {f['cast']}</p>
                 </div>
             </div>
         </div>
         <div class="image">
-            <img src="{pic}" alt="picture">
+            <img src="{f['pic']}" alt="picture">
         </div>
     </div>
     """
@@ -44,7 +44,7 @@ with open('data.json', 'r', encoding="utf8") as file:
     
 output=""
 for film in json.loads(data):
-    output+=template(film['title'], film['year'], film['poster'], film['web'], film['i'], film['f'], film['r'], film['m'], film['dir'], film['cast'], film['pic'])
+    output+=template(film)
     
 with open('out.txt', 'w+', encoding="utf8") as out:
     out.write(output)
