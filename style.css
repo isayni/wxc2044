@@ -7,14 +7,26 @@ p{
     margin: 0;
 }
 header{
+    margin: auto;
     width: 1000px;
     height: 350px;
-    margin: auto;
     background-image: url('img/banner.jpg');
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
-} 
+}
+nav{
+    margin: auto;
+}
+#stripe{
+    margin: auto;
+    height: 32px;
+    background-image: url('img/strip.png');
+    background-size: 25%;
+    width: 1000px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
 main{
     margin: auto;
     display: flex;
