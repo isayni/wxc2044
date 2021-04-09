@@ -2,6 +2,8 @@
 body{
     background-image: url("img/back.jpg");
     background-size: 100%;
+    margin: 0;
+    padding: 0;
 }
 p{
     margin: 0;
@@ -35,6 +37,15 @@ main{
     width: 860px;
     background-color: azure;
     padding: 70px;
+}
+footer{
+    padding: 40px;
+    background-color: black;
+    text-align: center;
+    color: azure;
+}
+footer a{
+    color: gold;
 }
 .film{
     margin: 20px 0px 0px 0px;
