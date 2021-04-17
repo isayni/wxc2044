@@ -1,13 +1,14 @@
-
 body{
     background-image: url("img/back.jpg");
     background-size: 100%;
     margin: 0;
     padding: 0;
 }
+
 p{
     margin: 0;
 }
+
 header{
     margin: auto;
     width: 1000px;
@@ -17,9 +18,11 @@ header{
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 nav{
     margin: auto;
 }
+
 #stripe{
     margin: auto;
     height: 32px;
@@ -29,6 +32,7 @@ nav{
     border-bottom: 2px solid black;
     border-top: 2px solid black;
 }
+
 main{
     margin: auto;
     display: flex;
@@ -38,28 +42,48 @@ main{
     background-color: azure;
     padding: 70px;
 }
+
 footer{
     padding: 40px;
     background-color: black;
     text-align: center;
     color: azure;
 }
+
 footer a{
     color: gold;
 }
+
+.container{
+    width: 100%;
+}
+
 .film{
-    margin: 20px 0px 0px 0px;
+    margin: 36px 0px 0px 0px;
+    height: 200px;
     display: inline-flex;
 }
+
 .pres{
     background-color: rgb(235, 232, 217);
     border: 6px ridge brown;
     width: 600px;
-    height: 200px;
+    height: 100%;
+    margin: auto;
     position: relative;
 }
+
+.director{
+    background-color: rgb(235, 232, 217);
+    border: 6px ridge brown;
+    width: 398px;
+    height: 170px;
+    margin: 10px;
+    float: left;
+}
+
 .image{
-    height: 200px;
+    height: 100%;
     width: 220px;
     margin-left: 20px;
     border: 6px ridge brown;
@@ -68,6 +92,7 @@ footer a{
     overflow: hidden;
     position: relative;
 }
+
 .image img{
     position: absolute;
     left: -1000%;
@@ -77,25 +102,42 @@ footer a{
     margin: auto;
     height: 100%;
 }
+
+.poster{
+    float: left;
+}
+
+.poster img{
+    height: 190px;
+    border: 5px double red;
+}
+
+.desc{
+    color: black;
+    margin-left: 160px;
+}
+
+.desc a{
+    color: Black;
+}
+
 .desc hr{
     background-color: rgb(80, 80, 80);
     width: 250px;
     height: 2px;
 }
-.poster{
+
+.dirfilm > a{
+    height: 115px;
     float: left;
+    margin-right: 26px;
+    border: 3px ridge #de6509;
 }
-.poster img{
-    height: 190px;
-    border: 5px double red;
+
+.dirfilm img{
+    height: 100%;
 }
-.desc{
-    color: black;
-    margin-left: 160px;
-}
-.desc a{
-    color: Black;
-}
+
 .ratings{
     margin-top: 4px;
     padding: 5px;
@@ -104,9 +146,11 @@ footer a{
     display: inline-block;
     border-radius: 10px;
 }
+
 .ratings img{
     height: 22px;
 }
+
 .rating{
     float: left;
     margin-left: 10px;
@@ -114,6 +158,7 @@ footer a{
     display: flex;
     justify-content: center;
 }
+
 .rating p{
     font-size: 13pt;
     vertical-align: middle;
@@ -128,6 +173,7 @@ footer a{
     padding: 2px;
     font-size: 10pt !important;
 }
+
 .cred{
     vertical-align: bottom;
     position: absolute;

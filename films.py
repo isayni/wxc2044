@@ -39,7 +39,7 @@ def template(f):
     </div>
     """
 
-with open('data.json', 'r', encoding="utf8") as file:
+with open('films.json', 'r', encoding="utf8") as file:
     data = file.read()
     
 output=""
