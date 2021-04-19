@@ -24,6 +24,20 @@ header img{
     margin-right: 20px;
     margin-left: 20px;
 }
+@media (max-width: 1208px){
+    header img{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    #content{
+        width: 100%;
+    }
+    nav > ul{
+        width: 100vw;
+    }
+}
 
 nav{
     margin: auto;
@@ -33,10 +47,11 @@ nav > ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 1000px;
 }
 nav > ul li{
     display: inline-block;
-    width: 330px;
+    width: 33%;
     padding: 30px 0 30px 0;
     text-align: center;
 }
@@ -50,47 +65,47 @@ nav > ul a{
     text-decoration: none;
 }
 
+#content{
+    width: 1000px;
+    margin: auto;
+}
+
 #top{
     margin: auto;
     margin-top: 84px;
-    width: 1000px;
-    height: 350px;
+    width: 100%;
     background-image: url('img/banner.jpg');
     background-position: center center;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#bar{
-    margin: auto;
-}
-
 #stripe{
     margin: auto;
     height: 32px;
+    width: 100%;
     background-image: url('img/strip.png');
-    background-size: 25%;
-    width: 1000px;
+    background-size: contain;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
 }
 
 main{
     margin: auto;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 860px;
+    width: 100%;
     min-height: 300px;
+    box-sizing: border-box;
     background-color: azure;
     padding: 70px;
 }
 
 footer{
-    padding: 40px;
     background-color: black;
     text-align: center;
     color: azure;
+    padding: 40px 0;
+    width: 100%;
 }
 
 footer a{
@@ -104,7 +119,8 @@ footer a{
 .film{
     margin: 36px 0px 0px 0px;
     height: 200px;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
 }
 
 .pres{
@@ -127,11 +143,9 @@ footer a{
 
 .image{
     height: 100%;
-    width: 220px;
+    width: 240px;
     margin-left: 20px;
     border: 6px ridge brown;
-    background-position: center center;
-    background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
 }
