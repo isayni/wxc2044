@@ -95,6 +95,11 @@ main h3{
     font-size: 15pt;
 }
 
+main iframe{
+    width: 90%;
+    height: 600px;
+}
+
 footer{
     background-color: black;
     text-align: center;
@@ -105,10 +110,6 @@ footer{
 
 footer a{
     color: gold;
-}
-
-.container{
-    width: 100%;
 }
 
 .film{
@@ -257,7 +258,7 @@ footer a{
     }
 }
 
-@media (max-width: 640px){
+@media (max-width: 650px){
     .dirfilm > a{
         width: 17%;
         height: auto;
@@ -271,6 +272,6 @@ footer a{
 
 @media print {
         body { background: #ffffff; color: #000000; }
-        .image, header, #stripe, #top, footer, hr{ display: none; }
+        .image, header, #stripe, #top, footer, hr, iframe{ display: none; }
         a { text-decoration: underline; }
 }

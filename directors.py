@@ -1,7 +1,7 @@
 import json
 def template(d):
     return f"""
-    <div class="film" style="display: block">
+    <div class="film">
         <div class="pres">
             <div class="poster">
                 <img src="{d['image']}" alt="photo">
