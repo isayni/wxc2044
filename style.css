@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&family=Tinos&family=Cardo&family=Cinzel:wght@600&display=swap');
 body{
     background-image: url("img/back.jpg");
     background-size: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Tinos', serif;
 }
 
 p{
@@ -34,6 +36,8 @@ nav > ul{
     padding: 0;
     margin: 0;
     width: 1000px;
+    font-family: 'Cinzel', serif;
+    font-size: 14pt;
 }
 nav > ul li{
     display: inline-block;
@@ -80,10 +84,15 @@ main{
     margin: auto;
     justify-content: center;
     width: 100%;
-    min-height: 300px;
+    min-height: 340px;
     box-sizing: border-box;
     background-color: azure;
     padding: 70px;
+}
+
+main h3{
+    font-family: 'Noticia Text', serif;
+    font-size: 15pt;
 }
 
 footer{
@@ -157,6 +166,7 @@ footer a{
 .desc{
     color: black;
     margin-left: 160px;
+    font-family: 'Tinos', serif;
 }
 
 .desc a{
@@ -257,4 +267,10 @@ footer a{
         width: 100%;
         height: auto;
     }
+}
+
+@media print {
+        body { background: #ffffff; color: #000000; }
+        .image, header, #stripe, #top, footer, hr{ display: none; }
+        a { text-decoration: underline; }
 }
