@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <title>Filmy</title>
+        <title>Kontakt</title>
         <meta name="author" content="Dominik Cholewa">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
@@ -13,10 +13,10 @@
             <a href="index.html"><img src="img/logo.png" style="border-radius:  50%;" alt="logo"></a>
             <nav>
                 <ul>
-                    <a href="index.html"><li class="curr">Strona główna</li></a>
+                    <a href="index.html"><li>Strona główna</li></a>
                     <a href="films.html"><li>Filmy</li></a>
                     <a href="directors.html"><li>Reżyserzy</li></a>
-                    <a href="kontakt.html"><li>Kontakt</li></a>
+                    <a href="kontakt.html"><li class="curr">Kontakt</li></a>
                 </ul>
             </nav>
             <a href="https://www.imdb.com/user/ur91489233"><img src="img/imdb.png" alt="imdb"></a>
@@ -24,14 +24,17 @@
         <div id="content">
             <div id="top"><img src="img/banner.jpg" alt="banner" style="width:100%;"></div>
             <div id="stripe"></div>
-            <main style="display: inline-block">
-                <div style="display: flex; justify-content: center;">
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/0daS_SDCT_U"
-                        title="YouTube video player" frameborder="0" allow="accelerometer;
-                        autoplay; clipboard-write; encrypted-media; gyroscope;
-                        picture-in-picture" allowfullscreen>
-                    </iframe>
+            <main>
+                <div id="contact">
+                    <h1>Kontakt</h1>
+                    <hr style="height: 2px; background-color: #111; width: 75%">
+                    <form>
+                        <input class="contact-field" type="text" placeholder="Imię i nazwisko">
+                        <input class="contact-field" type="email" placeholder="adres e-mail">
+                        <input class="contact-field" type="text" placeholder="numer telefonu">
+                        <textarea class="contact-field" placeholder="twoja wiadomość"></textarea>
+                        <input class="contact-submit" type="submit" value="WYŚLIJ">
+                    </form>
                 </div>
             </main>
         </div>
