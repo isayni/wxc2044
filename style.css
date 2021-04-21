@@ -186,7 +186,7 @@ footer a{
 
 .desc hr{
     background-color: rgb(80, 80, 80);
-    text-align: left;
+    margin: 0px;
     width: 250px;
     height: 2px;
 }
