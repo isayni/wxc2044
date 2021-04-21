@@ -8,22 +8,22 @@ def template(f):
             </div>
             <div class="desc">
                     <h3><a href="{f['web']}">{f['title']}</a> ({f['year']})</h3>
-                <hr align="left">
+                <hr>
                 <div class="ratings">
                     <div class="rating">
-                        <img src="img/imdb.png">
+                        <img src="img/imdb.png" alt="imdb">
                         <p>{f['i']}</p>
                     </div>
                     <div class="rating">
-                        <img src="img/filmweb.png">
+                        <img src="img/filmweb.png" alt="filmweb">
                         <p>{f['f']}</p>
                     </div>
                     <div class="rating">
-                        <img src="img/rotten.png">
+                        <img src="img/rotten.png" alt="rotten">
                         <p>{f['r']}%</p>
                     </div>
                     <div class="rating">
-                        <img src="img/meta.png">
+                        <img src="img/meta.png" alt="meta">
                         <p class="metar">{f['m']}</p>
                     </div>
                 </div>
@@ -41,10 +41,10 @@ def template(f):
 
 with open('films.json', 'r', encoding="utf8") as file:
     data = file.read()
-    
+
 output=""
 for film in json.loads(data):
     output+=template(film)
-    
+
 with open('out.txt', 'w+', encoding="utf8") as out:
     out.write(output)

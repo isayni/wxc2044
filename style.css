@@ -102,7 +102,12 @@ main h3{
 
 main iframe{
     width: 90%;
-    height: 600px;
+    height: 540px;
+}
+
+.vid{
+    display: flex;
+    justify-content: center;
 }
 
 footer{
@@ -181,6 +186,7 @@ footer a{
 
 .desc hr{
     background-color: rgb(80, 80, 80);
+    text-align: left;
     width: 250px;
     height: 2px;
 }
@@ -307,7 +313,7 @@ footer a{
 }
 
 @media print {
-        body { background: #ffffff; color: #000000; }
-        .image, header, #stripe, #top, footer, hr, iframe{ display: none; }
-        a { text-decoration: underline; }
+    body { background: #ffffff; color: #000000; }
+    .image, header, #stripe, #top, footer, hr, iframe{ display: none; }
+    a { text-decoration: underline; }
 }
