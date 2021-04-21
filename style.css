@@ -39,6 +39,17 @@ nav > ul{
     font-family: 'Cinzel', serif;
     font-size: 14pt;
 }
+
+nav > ul a{
+    transition: 0.2s;
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul a:hover{
+    color: gold;
+}
+
 nav > ul li{
     width: 25%;
     padding: 30px 0 30px 0;
@@ -49,11 +60,6 @@ nav > ul li{
 .curr{
     border-bottom: solid 3px gold;
     box-sizing: border-box;
-}
-
-nav > ul a{
-    color: white;
-    text-decoration: none;
 }
 
 #content{
