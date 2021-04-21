@@ -8,7 +8,6 @@ def template(d):
             </div>
             <div class="desc">
                 <h3 style="text-align: center"><a href="{d['imdb']}">{d['director']}</a></h3>
-                <hr>
                 <div class="dirfilm">
                     <a href="{d['l1']}" title="{d['f1']}"><img src="{d['i1']}" alt="{d['f1']}"></a>
                     <a href="{d['l2']}" title="{d['f2']}"><img src="{d['i2']}" alt="{d['f2']}"></a>
